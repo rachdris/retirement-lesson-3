@@ -34,7 +34,7 @@
 
   <section class="artmain">
     <div class="in">
-      <div class="arthead" data-edit="article heading (v3)">
+      <div class="arthead" data-edit="article heading (v5)">
         <h1>Find your retirement number and a plan for reaching it</h1>
       </div>
 
@@ -46,7 +46,7 @@
            site. Put it OUTSIDE this data-edit region: editor.js only touches
            [data-edit], so an interactive sitting outside one can use plain
            inputs and plain JS. -->
-      <article class="prose" id="read" data-edit="article body (v3)">
+      <article class="prose" id="read" data-edit="article body (v5)">
         <p>Retirement planning can be broken into <strong>two distinct but
           connected steps</strong>. First you define the destination. Then you map
           out the path to get there.</p>
@@ -67,144 +67,201 @@
         <p>Not sure? Start with what you spend now. Your estimate will get clearer
           as retirement gets closer.</p>
 
-        <div class="callout"><span class="ctitle">Jasmine&rsquo;s example</span>
-          <p>Jasmine is 27 and earns $70,000 a year. She&rsquo;s starting to plan for
-            retirement. As a starting point she uses her current lifestyle, which she
-            hopes to maintain in retirement. She estimates she&rsquo;ll spend $70,000 a
-            year in retirement, in today&rsquo;s dollars.</p>
-        </div>
+        <p>If you know you will have <strong>other sources of income</strong> in
+          retirement, like a pension or Social Security, you can subtract the income
+          you expect from your expected spending to find the amount your savings
+          needs to cover.</p>
 
         <h3>How long do you expect to be retired?</h3>
 
         <p>Your retirement length is the number of years between when you stop
           working and the age you expect to live to.</p>
 
-        <p>Many plan to retire at 65 and Americans who reach 65 can expect
-          to live for about 20 more years on average, according to the
+        <p>Many people plan to retire at 65. Americans who reach 65 can expect to
+          live about 20 more years on average, according to the
           <a href="https://www.cdc.gov/nchs/products/databriefs/db548.htm"
-          target="_blank" rel="noopener">CDC</a>. Many live longer so planning for
-          longer periods is reasonable.</p>
+          target="_blank" rel="noopener">CDC</a>. Many live longer, so planning for
+          longer periods, 25 or 30 years, is reasonable.</p>
 
-        <p>If you think you may want to retire sooner, or expect to live longer,
-          you will have to cover more years.</p>
-
-        <div class="callout"><span class="ctitle">Jasmine&rsquo;s example</span>
-          <p>Jasmine plans to retire at 65 for a 30-year retirement, to age 95.</p>
-        </div>
+        <p>If you&rsquo;d like to retire sooner, or expect to live longer,
+          you&rsquo;ll have to cover more years.</p>
 
         <h3>How much do you expect your investments to grow in retirement?</h3>
 
-        <p>Retirement savings are usually invested so that they can keep growing,
-          even after you stop working. The rate you expect them to grow, your
-          expected return, is an estimate and it depends on
+        <p>Your expected return is how much you expect your savings to grow each
+          year. It is an estimate and it depends on
           what you invest in.</p>
 
         <p>In retirement, many people hold more relatively safe investments, such
-          as bonds, which typically come with lower returns. For example, a 4%
-          return before inflation is a common assumption for retirement
-          savings.</p>
+          as bonds, which typically come with lower returns. A 4% return, before
+          inflation, is a common assumption for retirement savings held in
+          lower-risk investments.</p>
 
         <h3>Have you considered inflation?</h3>
 
-        <p>Inflation, the fact that prices rise over time, means that the same
-          amount of money today will buy less in the future.</p>
+        <p>Inflation is the rise in prices over time. It means the same amount of
+          money today will buy less in the future.</p>
 
-        <p>The Federal Reserve aims for inflation of 2% a year. At that rate, prices
-          double every 35 years, so $5,000 a month in 35 years would buy what about
-          $2,500 buys today.</p>
+        <p>The Federal Reserve aims for inflation of 2% a year, although it has run
+          higher in recent years. At 2%, prices double every 35 years, so $5,000 a
+          month in 35 years would buy what about $2,500 buys today.</p>
 
         <p>In retirement planning, you don&rsquo;t have to guess future prices.
-          Instead you keep everything in <strong>today&rsquo;s dollars</strong> and
-          adjust your <strong>expected return</strong> for inflation.</p>
+          Instead you keep everything in today&rsquo;s dollars by subtracting
+          inflation from your expected return.</p>
 
-        <div class="callout"><span class="ctitle">Jasmine&rsquo;s example</span>
-          <p>Jasmine expects her investments to earn an annual rate of 4%. To adjust
-            for inflation, she uses the target inflation rate of 2%. <strong>She
-            estimates a 2% return</strong>.</p>
-          <p>4% &minus; 2% = 2%</p>
+        <h3>Example: Putting it all together</h3>
+
+        <p>Suppose you estimate you&rsquo;ll need $60,000 a year in retirement to
+          live comfortably. You want to retire a little early, at 60, and hope to
+          live to 90, a 30-year retirement.</p>
+
+        <p>You plan on holding your savings in relatively safe investments that
+          generate a return. You expect a return of 4% before inflation. Subtracting
+          the target inflation rate of 2%, you plan on 2% growth.</p>
+
+        <div class="keynum">
+          <span class="ctitle">Your retirement number:</span>
+          <span class="kfig">$1,343,787</span>
+          <span class="klabel">With this saved in today&rsquo;s dollars by age 60,
+            you can spend what $60,000 buys today every year until 90, when your
+            savings run out.</span>
+          <span class="klabel">If you had <strong>ignored inflation</strong> and used
+            4%, the number would be $1,037,522, about $300,000 less, and you could
+            spend what $46,325 buys today.</span>
         </div>
 
-        <h3>Will you have other income, such as a pension or Social Security?</h3>
+        <details class="math">
+          <summary>The math behind the number:</summary>
+          <div class="dbody">
+            <div class="formula"><var>PV</var><span class="op">=</span><span class="frac"><span class="num"><var>C</var></span><span class="den"><var>r</var></span></span><span class="par">(</span>1<span class="op">&minus;</span><span class="frac"><span class="num">1</span><span class="den">(1+<var>r</var>)<sup><var>T</var></sup></span></span><span class="par">)</span></div>
+            <ul>
+              <li><var>PV</var> = the retirement number (what we&rsquo;re solving for)</li>
+              <li><var>C</var> = 60,000 (yearly retirement spending)</li>
+              <li><var>r</var> = 0.02 (a 2% return after inflation)</li>
+              <li><var>T</var> = 30 (years of retirement)</li>
+            </ul>
+            <p class="mstep">With the numbers filled in:</p>
+            <div class="formula"><var>PV</var><span class="op">=</span><span class="frac"><span class="num">60,000</span><span class="den">0.02</span></span><span class="par">(</span>1<span class="op">&minus;</span><span class="frac"><span class="num">1</span><span class="den">(1.02)<sup>30</sup></span></span><span class="par">)</span></div>
+            <ol class="msteps">
+              <li>60,000 &divide; 0.02 = 3,000,000</li>
+              <li>(1.02)<sup>30</sup> = 1.811362, and 1 &divide; 1.811362 = 0.552071</li>
+              <li>1 &minus; 0.552071 = 0.447929</li>
+              <li>3,000,000 &times; 0.447929 = <strong>$1,343,787</strong></li>
+            </ol>
+          </div>
+        </details>
 
-        <p>Other income sources in retirement can lower how much you need to save.
-          For example, if you expect to spend $5,000 a month and you will receive a
-          $2,500 pension, half of your spending is already covered.</p>
-
-        <p><mark class="todo">Note for Matt: should we move this to be a sub point
-          under how much you expect to spend in retirement? Do we need to mention
-          anything about how to estimate your social security benefits? -- Is more
-          general statements okay here?</mark></p>
-
-        <h3>Putting it all together</h3>
-
-        <p>Your expected spending, the length of your retirement and your expected
-          return combine into one figure: the amount you need on the day you
-          retire.</p>
-
-        <div class="callout"><span class="ctitle">Jasmine&rsquo;s example</span>
-          <p>Jasmine isn&rsquo;t counting on a pension or Social Security yet, so her
-            three estimates come to <strong>$1,567,752</strong>. With that saved at
-            65, she could spend $70,000 a year in today&rsquo;s dollars until she is
-            95, when her savings would run out.</p>
-          <p><strong>Why considering inflation matters:</strong></p>
-          <p>Had Jasmine used 4% without accounting for inflation, her number would
-            have come to $1,210,442, about $350,000 less and would only cover about
-            $54,000 a year in today&rsquo;s dollars.</p>
-        </div>
       </article>
 
-      <!-- v3: the reader's one interactive moment in the article. It sits
-           OUTSIDE data-edit (editor.js would destroy the inputs, and Copy HTML
-           would export whatever was last typed). Deliberately no Jasmine column:
-           she is an example, not a benchmark, so nothing here sits beside her.
-           Fields start EMPTY so any figure on screen is the reader's own. The
-           three inputs mirror the calculator's f-spend / f-len / f-rdur. -->
-      <section class="nowyou" id="yournum" aria-labelledby="ny-h">
-        <p class="cstep">Optional</p>
-        <h3 class="nyh" id="ny-h">Try it with your own numbers</h3>
-        <div class="cfield">
-          <label for="f-est">Annual spending in retirement</label>
-          <div class="cin"><span class="cpre">$</span>
-            <input id="f-est" type="text" inputmode="decimal" value="" /></div>
-        </div>
-        <div class="cfield">
-          <label for="f-est-len">Expected length of retirement</label>
-          <div class="cin"><input id="f-est-len" type="text" inputmode="decimal" value="" />
-            <span class="csuf">years</span></div>
-        </div>
-        <div class="cfield">
-          <label for="f-est-ret">Expected annual return during retirement</label>
-          <div class="cin"><input id="f-est-ret" type="text" inputmode="decimal" value="" />
-            <span class="csuf">%</span></div>
-          <p class="chint">With expected inflation subtracted, as described above.</p>
+      <!-- v5: the SAME calculator twice. This copy ("a-" ids) opens on Step One;
+           the one after Step Two opens on Step Two. The bottom one is the engine:
+           this copy's fields feed it (MIRROR), and run() copies its results and
+           Figure 1 back here (mirrorOut), so the two can never disagree. The
+           shortfall section stays with the bottom copy only. -->
+      <section class="calc calc-a" id="a-calculator" aria-labelledby="a-calch">
+        <h2 id="a-calch">Try it with your numbers</h2>
+        <p class="clede">It starts with the example above. Change any number to
+          make it yours. Everything calculates in your browser. Nothing is saved
+          or sent anywhere.</p>
+
+        <div class="ctabs" role="tablist" aria-label="Calculator steps">
+          <button type="button" class="ctab on" id="a-tb1" role="tab"
+                  aria-selected="true" aria-controls="a-cp1">Step One</button>
+          <button type="button" class="ctab" id="a-tb2" role="tab"
+                  aria-selected="false" aria-controls="a-cp2">Step Two</button>
         </div>
 
-        <div class="cout" aria-live="polite">
-          <span class="colab">Your retirement number</span>
-          <span class="cofig" id="yn-fig">&mdash;</span>
+        <div class="cpanel" id="a-cp1" role="tabpanel" aria-labelledby="a-tb1">
+          <p class="cstep">Estimate the required retirement balance</p>
+          <div class="cfield">
+            <label for="a-f-spend">Annual spending in retirement</label>
+            <div class="cin"><span class="cpre">$</span>
+              <input id="a-f-spend" type="text" inputmode="decimal" value="60,000" /></div>
+            <p class="chint">How much you plan to withdraw each year, in
+              today&rsquo;s dollars.</p>
+          </div>
+          <div class="cfield">
+            <label for="a-f-len">Expected length of retirement</label>
+            <div class="cin"><input id="a-f-len" type="text" inputmode="decimal" value="30" />
+              <span class="csuf">years</span></div>
+            <p class="chint">How many years your retirement will last.</p>
+          </div>
+          <div class="cfield">
+            <label for="a-f-rdur">Expected annual return during retirement</label>
+            <div class="cin"><input id="a-f-rdur" type="text" inputmode="decimal" value="2" />
+              <span class="csuf">%</span></div>
+            <p class="chint">To account for inflation, subtract expected inflation
+              from your expected return. If you expect 4% growth and 2% inflation,
+              enter 2%.</p>
+          </div>
+          <div class="cout" aria-live="polite">
+            <span class="colab">Required retirement balance</span>
+            <span class="cofig" id="a-o-bal">&mdash;</span>
+            <span class="conote" id="a-o-balnote">Enter your numbers above.</span>
+          </div>
         </div>
 
-        <div class="prose">
-          <details class="math">
-            <summary>The math behind the number:</summary>
-            <div class="dbody">
-              <div class="formula"><var>PV</var><span class="op">=</span><span class="frac"><span class="num"><var>C</var></span><span class="den"><var>r</var></span></span><span class="par">(</span>1<span class="op">&minus;</span><span class="frac"><span class="num">1</span><span class="den">(1+<var>r</var>)<sup><var>T</var></sup></span></span><span class="par">)</span></div>
-              <ul>
-                <li><var>C</var> = <span id="yn-C">&mdash;</span> (Yearly retirement spending)</li>
-                <li><var>T</var> = <span id="yn-T">&mdash;</span> (<span id="yn-T2">&mdash;</span> years of retirement)</li>
-                <li><var>r</var> = annual return during retirement (<span id="yn-r">&mdash;</span>)</li>
-                <li><var>PV</var> = <strong id="yn-pv">&mdash;</strong></li>
-              </ul>
+        <div class="cpanel" id="a-cp2" role="tabpanel" aria-labelledby="a-tb2" hidden>
+          <p class="cstep">Calculate the savings needed to reach it</p>
+          <p class="ccarry">Target balance from step one:
+            <strong id="a-o-carry">&mdash;</strong></p>
+          <div class="cfield">
+            <label for="a-f-cur">Current retirement savings</label>
+            <div class="cin"><span class="cpre">$</span>
+              <input id="a-f-cur" type="text" inputmode="decimal" value="0" /></div>
+            <p class="chint">What you have put away so far. Leave at 0 if you are
+              starting out.</p>
+          </div>
+          <div class="cfield">
+            <label for="a-f-age">Your age now</label>
+            <div class="cin"><input id="a-f-age" type="text" inputmode="decimal" value="25" />
+              <span class="csuf">years old</span></div>
+            <p class="chint">Only used to label the chart below.</p>
+          </div>
+          <div class="cfield">
+            <label for="a-f-yrs">Years until retirement</label>
+            <div class="cin"><input id="a-f-yrs" type="text" inputmode="decimal" value="40" />
+              <span class="csuf">years</span></div>
+          </div>
+          <div class="cfield">
+            <label for="a-f-rbef">Expected annual return before retirement</label>
+            <div class="cin"><input id="a-f-rbef" type="text" inputmode="decimal" value="7" />
+              <span class="csuf">%</span></div>
+            <p class="chint">Subtract expected inflation here too. If you expect
+              8% growth and 3% inflation, enter 5%.</p>
+          </div>
+          <div class="cfield">
+            <label for="a-f-freq">Savings frequency</label>
+            <div class="cin"><select id="a-f-freq">
+              <option value="1">Annual</option>
+              <option value="12">Monthly</option>
+              <option value="26">Bi-weekly</option>
+              <option value="52">Weekly</option>
+            </select></div>
+          </div>
+          <div class="cout" aria-live="polite">
+            <span class="colab" id="a-o-savlab">Required savings</span>
+            <span class="cofig" id="a-o-sav">&mdash;</span>
+            <span class="conote" id="a-o-savnote">Fill in step one first.</span>
+          </div>
+
+          <figure class="cfig">
+            <div class="clegend">
+              <span class="ckey k1"></span>annual saving by starting age
+              <span class="ckey kyou"></span>your starting age
             </div>
-          </details>
+            <div class="cwrap"><svg id="a-fig1" class="cchart" viewBox="0 0 520 300" role="img"
+                 aria-labelledby="a-fig1t"><title id="a-fig1t">Annual saving needed, by
+                 the age you start</title></svg><div class="ctip" id="a-fig1tip" hidden></div></div>
+            <figcaption class="ccap" id="a-fig1cap"></figcaption>
+          </figure>
         </div>
 
-        <p class="enote">These carry into the
-          <a href="#calculator">calculator at the end of the page</a>. Nothing you
-          enter is saved or sent anywhere.</p>
+        <button type="button" class="creset" id="a-c-reset">Reset</button>
       </section>
 
-      <article class="prose" data-edit="article body, continued (v3)">
+      <article class="prose" data-edit="article body, continued (v5)">
         <h2>Step Two: How much should you save each year to get there?</h2>
 
         <p>The amount you need to save each year depends on:</p>
@@ -247,6 +304,14 @@
         <p><mark class="todo">Content gap: again no explanation for where the 7%
           comes from</mark></p>
 
+        <p>maybe add some information about its okay to start now. the earlier you
+          start the better but the best time is now</p>
+
+        <p>the if the plan falls short may not to be a separate thing on the
+          calculator</p>
+
+        <p>intro to calculator main levers you can explore</p>
+
         <div class="keynum">
           <span class="ctitle">Annual savings:</span>
           <span class="kfig">$5,197 a year</span>
@@ -279,39 +344,39 @@
            plain rate/frequency division, not a geometric conversion, and the
            zero-return branches are theirs. -->
       <section class="calc" id="calculator" aria-labelledby="calch">
-        <h2 id="calch">Try it with your own numbers</h2>
-        <p class="clede">Everything calculates in your browser. Nothing is saved
-          or sent anywhere.</p>
+        <h2 id="calch">Try it with your numbers</h2>
+        <p class="clede">Your numbers from Step One carry over. Everything
+          calculates in your browser. Nothing is saved or sent anywhere.</p>
 
         <div class="ctabs" role="tablist" aria-label="Calculator steps">
-          <button type="button" class="ctab on" id="tb1" role="tab"
-                  aria-selected="true" aria-controls="cp1">Step One</button>
-          <button type="button" class="ctab" id="tb2" role="tab"
-                  aria-selected="false" aria-controls="cp2">Step Two</button>
+          <button type="button" class="ctab" id="tb1" role="tab"
+                  aria-selected="false" aria-controls="cp1">Step One</button>
+          <button type="button" class="ctab on" id="tb2" role="tab"
+                  aria-selected="true" aria-controls="cp2">Step Two</button>
         </div>
 
-        <div class="cpanel" id="cp1" role="tabpanel" aria-labelledby="tb1">
+        <div class="cpanel" id="cp1" role="tabpanel" aria-labelledby="tb1" hidden>
           <p class="cstep">Estimate the required retirement balance</p>
           <div class="cfield">
             <label for="f-spend">Annual spending in retirement</label>
             <div class="cin"><span class="cpre">$</span>
-              <input id="f-spend" type="text" inputmode="decimal" value="" /></div>
+              <input id="f-spend" type="text" inputmode="decimal" value="60,000" /></div>
             <p class="chint">How much you plan to withdraw each year, in
               today&rsquo;s dollars.</p>
           </div>
           <div class="cfield">
             <label for="f-len">Expected length of retirement</label>
-            <div class="cin"><input id="f-len" type="text" inputmode="decimal" value="" />
+            <div class="cin"><input id="f-len" type="text" inputmode="decimal" value="30" />
               <span class="csuf">years</span></div>
             <p class="chint">How many years your retirement will last.</p>
           </div>
           <div class="cfield">
             <label for="f-rdur">Expected annual return during retirement</label>
-            <div class="cin"><input id="f-rdur" type="text" inputmode="decimal" value="" />
+            <div class="cin"><input id="f-rdur" type="text" inputmode="decimal" value="2" />
               <span class="csuf">%</span></div>
             <p class="chint">To account for inflation, subtract expected inflation
-              from your expected return. If you expect 6% growth and 3% inflation,
-              enter 3%.</p>
+              from your expected return. If you expect 4% growth and 2% inflation,
+              enter 2%.</p>
           </div>
           <div class="cout" aria-live="polite">
             <span class="colab">Required retirement balance</span>
@@ -320,7 +385,7 @@
           </div>
         </div>
 
-        <div class="cpanel" id="cp2" role="tabpanel" aria-labelledby="tb2" hidden>
+        <div class="cpanel" id="cp2" role="tabpanel" aria-labelledby="tb2">
           <p class="cstep">Calculate the savings needed to reach it</p>
           <p class="ccarry">Target balance from step one:
             <strong id="o-carry">&mdash;</strong></p>
@@ -412,7 +477,7 @@
         </figure>
       </section>
 
-      <article class="prose" id="close" data-edit="article closing (v3)">
+      <article class="prose" id="close" data-edit="article closing (v5)">
       </article>
     </div>
   </section>
@@ -440,8 +505,8 @@
   if (!$('f-spend')) return;
 
   var F = ['f-spend','f-len','f-rdur','f-cur','f-age','f-yrs','f-rbef','f-freq','f-act'];
-  /* v3: step one starts empty, so any number on screen is the reader's */
-  var DEF = {'f-spend':'','f-len':'','f-rdur':'','f-cur':'0',
+  /* v5: defaults are the article's worked example ($60,000, 30 years, 2%) */
+  var DEF = {'f-spend':'60,000','f-len':'30','f-rdur':'2','f-cur':'0',
              'f-age':'25','f-yrs':'40','f-rbef':'7','f-freq':'1','f-act':'5'};
   var GOLD = '#A9761F', RED = '#9B2743', GRID = '#E1E5E4', INK = '#5D6A72';
 
@@ -606,9 +671,12 @@
      the middle of a number fights you. This counts the digits to the left of
      the caret, reformats, then walks forward past the same number of digits,
      which keeps the caret where the user left it. */
-  var MONEY = { 'f-spend': 1, 'f-cur': 1, 'f-est': 1 };
+  var MONEY = { 'f-spend': 1, 'f-cur': 1, 'a-f-spend': 1, 'a-f-cur': 1 };
   /* in-article box -> the calculator field it feeds */
-  var MIRROR = { 'f-est': 'f-spend', 'f-est-len': 'f-len', 'f-est-ret': 'f-rdur' };
+  var MIRROR = {};
+  ['f-spend','f-len','f-rdur','f-cur','f-age','f-yrs','f-rbef','f-freq'].forEach(function (id) {
+    MIRROR['a-' + id] = id;
+  });
 
   function sanitizeNum(v) {
     var neg = v.trim().charAt(0) === '-';
@@ -795,6 +863,19 @@
       $('o-sfnote').textContent = '';
       clearFig('fig2', 'fig2cap');
     }
+    mirrorOut();
+  }
+  /* copy the engine's results into the middle copy of the calculator */
+  var OUT_TEXT = ['o-bal','o-balnote','o-carry','o-savlab','o-sav','o-savnote'];
+  function mirrorOut() {
+    if (!$('a-o-bal')) return;
+    OUT_TEXT.forEach(function (id) { $('a-' + id).textContent = $(id).textContent; });
+    $('a-fig1cap').innerHTML = $('fig1cap').innerHTML;
+    /* same viewBox, so the engine's scales work for the hover layer too */
+    /* strip ids from the copy, or the empty chart's <title id="fig1t"> repeats */
+    $('a-fig1').innerHTML = $('fig1').innerHTML.replace(/ id="[^"]*"/g, '');
+    $('a-fig1')._cx = $('fig1')._cx;
+    attachHover($('a-fig1'), $('a-fig1tip'));
   }
   /* an empty chart, with hover disarmed, for when there is nothing to plot */
   function clearFig(svgId, capId) {
@@ -805,13 +886,15 @@
     $(capId).innerHTML = '';
   }
 
-  function tab(n) {
-    $('tb1').classList.toggle('on', n === 1);
-    $('tb2').classList.toggle('on', n === 2);
-    $('tb1').setAttribute('aria-selected', n === 1);
-    $('tb2').setAttribute('aria-selected', n === 2);
-    $('cp1').hidden = n !== 1;
-    $('cp2').hidden = n !== 2;
+  /* each copy keeps its own tab; pre is '' for the bottom copy, 'a-' for the middle */
+  function tab(n, pre) {
+    pre = pre || '';
+    $(pre + 'tb1').classList.toggle('on', n === 1);
+    $(pre + 'tb2').classList.toggle('on', n === 2);
+    $(pre + 'tb1').setAttribute('aria-selected', n === 1);
+    $(pre + 'tb2').setAttribute('aria-selected', n === 2);
+    $(pre + 'cp1').hidden = n !== 1;
+    $(pre + 'cp2').hidden = n !== 2;
   }
   F.forEach(function (id) {
     var el = $(id);
@@ -831,14 +914,18 @@
     });
     b.addEventListener('focus', function () { if (b.value === '0') b.select(); });
   });
-  $('tb1').addEventListener('click', function () { tab(1); });
-  $('tb2').addEventListener('click', function () { tab(2); });
-  $('c-reset').addEventListener('click', function () {
-    F.forEach(function (id) {
-      var el = $(id); el.value = DEF[id];
-      if (MONEY[id]) el.value = groupNum(sanitizeNum(el.value))[0];
+  ['', 'a-'].forEach(function (pre) {
+    if (!$(pre + 'tb1')) return;
+    $(pre + 'tb1').addEventListener('click', function () { tab(1, pre); });
+    $(pre + 'tb2').addEventListener('click', function () { tab(2, pre); });
+    /* either Reset clears both copies, since they share one set of numbers */
+    $(pre + 'c-reset').addEventListener('click', function () {
+      F.forEach(function (id) {
+        var el = $(id); el.value = DEF[id];
+        if (MONEY[id]) el.value = groupNum(sanitizeNum(el.value))[0];
+      });
+      run();
     });
-    run();
   });
   run();
 })();

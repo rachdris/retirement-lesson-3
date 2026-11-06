@@ -527,11 +527,20 @@ body.editing mark.todo{cursor:pointer}
 .nowyou{max-width:68ch;font-size:18px;margin:30px 0 34px;padding:20px 22px 20px;
   background:var(--mist);border:1px solid var(--line);border-radius:14px}
 .nowyou .cstep{margin-bottom:0}
+.nowyou .nyintro{margin:6px 0 0;font-size:15.5px;line-height:1.5;color:var(--muted)}
+.prose details.math .mstep{margin:16px 0 0;font-weight:600;font-size:16.5px}
+.prose details.math ol.msteps{margin:.6em 0 0;padding-left:24px;list-style:decimal}
+.prose details.math ol.msteps li{font-size:16.5px;font-variant-numeric:tabular-nums}
+.prose .keynum .klabel + .klabel{margin-top:10px}
 .nowyou .nyh{margin:2px 0 0;font-family:var(--serif);font-weight:900;font-size:22px;
   line-height:1.2;color:var(--navy)}
 .nowyou .cout{margin-top:18px}
 .nowyou .prose details.math{margin:14px 0 0;background:#fff}
 .nowyou .enote{margin-top:14px}
+
+/* v5: the middle copy of the calculator sits inside the article, so it
+   needs the article's spacing below it, not the 10px the end-of-page one uses */
+.calc.calc-a{margin-bottom:34px}
 
 .creset{margin-top:16px;padding:9px 16px;font:600 15px/1 var(--sans);
   color:var(--muted);background:#fff;border:1px solid var(--line);
