@@ -527,6 +527,8 @@ body.editing mark.todo{cursor:pointer}
 .nowyou{max-width:68ch;font-size:18px;margin:30px 0 34px;padding:20px 22px 20px;
   background:var(--mist);border:1px solid var(--line);border-radius:14px}
 .nowyou .cstep{margin-bottom:0}
+.nowyou .nyh{margin:2px 0 0;font-family:var(--serif);font-weight:900;font-size:22px;
+  line-height:1.2;color:var(--navy)}
 .nowyou .cout{margin-top:18px}
 .nowyou .prose details.math{margin:14px 0 0;background:#fff}
 .nowyou .enote{margin-top:14px}
