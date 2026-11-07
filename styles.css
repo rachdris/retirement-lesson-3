@@ -694,3 +694,7 @@ body.editing{padding-bottom:132px}
 .prose.concepts h3{margin-top:0;font-size:19px;color:var(--navy)}
 .prose.concepts ul{margin-top:.6em}
 .prose.concepts li + li{margin-top:.3em}
+
+/* GitHub share copy: links to pages not built yet keep their link styling
+   but have no href, so they show where a link will go without dead-ending */
+.prose a.soon{cursor:help}
