@@ -8,7 +8,7 @@
   where you are against it, and turning the distance between the two into a yearly
   amount." />
 <meta name="theme-color" content="#0D3B4F" />
-<title>Find your retirement number and a plan for reaching it</title>
+<title>Find out how much you need to retire, and make a plan to get there</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -35,7 +35,7 @@
   <section class="artmain">
     <div class="in">
       <div class="arthead" data-edit="article heading (v5)">
-        <h1>Find your retirement number and a plan for reaching it</h1>
+        <h1>Find out how much you need to retire, and make a plan to get there</h1>
       </div>
 
       <!-- Empty on purpose: the copy is being written in the browser. Add a
@@ -47,9 +47,8 @@
            [data-edit], so an interactive sitting outside one can use plain
            inputs and plain JS. -->
       <article class="prose" id="read" data-edit="article body (v5)">
-        <p>Your retirement number is the amount you need saved on your first day of
-          retirement. Here&rsquo;s how to estimate it, and how much to save each year
-          to reach it.</p>
+        <p>Planning for retirement consists of two steps. First, determine the kind of lifestyle you want in retirement and what it
+          will cost. Then create a plan to get there.</p>
 
         <h2>Step One: Estimate how much you&rsquo;ll need</h2>
 
@@ -119,7 +118,7 @@
           the target inflation rate of 2%, you plan on 2% growth.</p>
 
         <div class="keynum">
-          <span class="ctitle">Your retirement number:</span>
+          <span class="ctitle">Your target number:</span>
           <span class="kfig">$1,343,787</span>
           <span class="klabel">With this saved in today&rsquo;s dollars by age 60,
             you can spend what $60,000 buys today every year until 90, when your
@@ -245,26 +244,30 @@
 
         <p>The further away retirement is, the less you have to save each year due
           to <a class="soon" title="Page coming soon">compound growth</a> (where you earn
-          interest not just on what you contribute but also on the interest you
-          already earned).</p>
+          interest not just on what you contribute but also on the interest
+          you&rsquo;ve already earned).</p>
 
-        <p>Waiting to save for retirement means having to save a greater amount
+        <p><a class="soon" title="Page coming soon">Waiting to save</a> for retirement means having to save a greater amount
           each year to reach the same goal.</p>
 
         <h3>How much do you expect your investments to grow while you work?</h3>
 
-        <p>While saving for retirement, people often hold more higher-risk
-          investments, such as stocks. Historically, U.S. stocks have grown around
+        <p>While saving for retirement, people often hold a larger share of
+          higher-risk investments, such as stocks. Historically, U.S. stocks have grown around
           <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html"
           target="_blank" rel="noopener">10%</a> a year, before inflation.
-          <strong>Adjusting for inflation,</strong> a 6% to 8% return is a common
+          <strong>After inflation,</strong> a 6% to 8% return is a common
           assumption for pre-retirement investments held mostly in stocks.</p>
 
         <p>Your return depends on what you invest in&mdash;stocks, bonds,
-          cash&mdash;but it also depends on how you <a class="soon" title="Page coming soon">diversify risk</a> and what you
-          <a class="soon" title="Page coming soon">pay in fees</a>. <mark class="todo">(this was in the original
-          pinecone content, but wondering if we should we move it because we don't
-          explain why these matter here?)</mark></p>
+          cash&mdash;as well as how you diversify risk and what you pay in fees.</p>
+
+        <ul>
+          <li><a class="soon" title="Page coming soon">Diversifying</a>, spreading your money across many
+            investments, means one poor performer is less likely to derail your
+            plan.</li>
+          <li><a class="soon" title="Page coming soon">Fees</a> add up over time and eat into your returns.</li>
+        </ul>
 
         <h3>Does your employer provide matching contributions?</h3>
 
@@ -272,28 +275,29 @@
           but often only if you put in some of your own. This is called an
           <a class="soon" title="Page coming soon">employer match</a>. For example, say your
           employer matches 100% of what you put in, up to 5% of your pay. If you put
-          in 5% of your pay, your employer adds another 5%.</p>
+          in at least 5% of your pay, your employer will add another 5%.</p>
 
-        <p><mark class="todo">This does not change the total amount you need to save
-          each year for retirement, but if your employer contributes, it means that
-          you have to personally save less because your employer is helping you
-          reach your number.</mark></p>
+        <p>Your yearly savings amount stays the same, but the match covers part of
+          it, so you don&rsquo;t have to save as much yourself. Workplace retirement
+          accounts go by different names, such as 401(k), 403(b), 457(b) or Thrift
+          Savings Plan.</p>
 
         <h3>Example</h3>
 
-        <p>Say your retirement number is $1,343,787, from Step One. You plan to
-          retire in 35 years.</p>
+        <p>Say you determined in Step One that you need <strong>$1,343,787</strong>
+          for retirement. You start saving at 25 and plan to retire at 60, so you have 35 years.</p>
 
-        <p>You expect a return of 9% before inflation while you work, subtracting 2%
-          inflation, you plan on 7% growth. To reach your retirement number you need
+        <p>You expect a return of 9% a year before inflation while you work.
+          Subtracting 2% inflation leaves 7%. To reach your target number, you need
           to save:</p>
 
         <div class="keynum">
           <span class="ctitle">Annual savings:</span>
           <span class="kfig">$9,721 a year</span>
           <span class="klabel">This is in today&rsquo;s dollars. In practice, you
-            would save $9,721 in your first year, then raise the amount by 2% each
-            year to keep up with inflation.</span>
+            would save <strong>$9,721 in your first year</strong>, then raise the
+            amount by 2% each year to keep up with inflation, so every year, what you
+            give up by saving equals giving up $9,721 of spending today.</span>
         </div>
 
         <details class="math">
@@ -406,17 +410,32 @@
         <button type="button" class="creset" id="c-reset">Reset</button>
       </section>
 
-      <article class="prose concepts" id="close" data-edit="article closing (v5)">
-        <h3>Core financial concepts this page builds on</h3>
-        <ul class="buildson">
-          <li><a class="soon" title="Page coming soon">Compound growth</a></li>
-          <li><a class="soon" title="Page coming soon">Inflation</a></li>
-          <li><a class="soon" title="Page coming soon">Portfolio allocation</a></li>
-        </ul>
+      <article class="prose" id="close" data-edit="article closing (v5)">
+        <p>Once you have your yearly savings amount, you can turn it into a plan.
+          Try the <a href="https://rachdris.github.io/pinecone-budget-worksheet-/"
+          target="_blank" rel="noopener">budgeting worksheet</a>.</p>
+
+        <div class="concepts">
+          <h3>Core financial concepts this page builds on</h3>
+          <ul class="buildson">
+            <li><a class="soon" title="Page coming soon">Compound growth</a></li>
+            <li><a class="soon" title="Page coming soon">Inflation</a></li>
+            <li><a class="soon" title="Page coming soon">Portfolio allocation</a></li>
+          </ul>
+        </div>
       </article>
     </div>
   </section>
 
+  <section class="band nextband">
+    <div class="in">
+      <a class="nextup soon" title="Page coming soon">
+        <span class="nlabel">Next in this topic</span>
+        <span class="nname">Risks in retirement planning</span>
+        <span class="nsub">Your plan rests on estimates. What happens when returns, inflation or how long you live turn out differently, and how to adjust.</span>
+      </a>
+    </div>
+  </section>
 
 </main>
 

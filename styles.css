@@ -689,12 +689,13 @@ body.editing{padding-bottom:132px}
 
 /* "Core financial concepts this page builds on": a tinted navy box so it reads
    as a pointer out of the lesson, not more of the lesson. */
-.prose.concepts{padding:20px 22px;background:#EAF1F5;border:1px solid #C9DAE2;
-  border-radius:13px}
-.prose.concepts h3{margin-top:0;font-size:19px;color:var(--navy)}
-.prose.concepts ul{margin-top:.6em}
-.prose.concepts li + li{margin-top:.3em}
+.prose .concepts{margin-top:1.6em;padding:20px 22px;background:#EAF1F5;
+  border:1px solid #C9DAE2;border-radius:13px}
+.prose .concepts:first-child{margin-top:0}
+.prose .concepts h3{margin-top:0;font-size:19px;color:var(--navy)}
+.prose .concepts ul{margin-top:.6em}
+.prose .concepts li + li{margin-top:.3em}
 
 /* GitHub share copy: links to pages not built yet keep their link styling
    but have no href, so they show where a link will go without dead-ending */
-.prose a.soon{cursor:help}
+.prose a.soon,a.nextup.soon{cursor:help}
