@@ -218,10 +218,10 @@
           </div>
           <div class="cfield">
             <label for="a-f-rbef">Expected annual return before retirement</label>
-            <div class="cin"><input id="a-f-rbef" type="text" inputmode="decimal" value="6" />
+            <div class="cin"><input id="a-f-rbef" type="text" inputmode="decimal" value="7" />
               <span class="csuf">%</span></div>
             <p class="chint">Subtract expected inflation here too. If you expect
-              8% growth and 2% inflation, enter 6%.</p>
+              9% growth and 2% inflation, enter 7%.</p>
           </div>
           <div class="cout" aria-live="polite">
             <span class="colab">Required savings each year</span>
@@ -254,38 +254,46 @@
         <h3>How much do you expect your investments to grow while you work?</h3>
 
         <p>While saving for retirement, people often hold more higher-risk
-          investments, such as stocks, which typically come with higher expected
-          returns. An 8% return, before inflation, is a common
-          assumption for savings held mostly in stocks.
-          <mark class="todo">[is this okay?]</mark></p>
+          investments, such as stocks. Historically, U.S. stocks have grown around
+          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html"
+          target="_blank" rel="noopener">10%</a> a year, before inflation.
+          <strong>Adjusting for inflation,</strong> a 6% to 8% return is a common
+          assumption for pre-retirement investments held mostly in stocks.</p>
 
         <p>Your return depends on what you invest in&mdash;stocks, bonds,
           cash&mdash;but it also depends on how you <a class="soon" title="Page coming soon">diversify risk</a> and what you
-          <a class="soon" title="Page coming soon">pay in fees</a>.</p>
-
-        <p><strong>Consider inflation.</strong> As in step one, subtract expected
-          inflation from your expected return to keep everything in today&rsquo;s
-          dollars.</p>
+          <a class="soon" title="Page coming soon">pay in fees</a>. <mark class="todo">(this was in the original
+          pinecone content, but wondering if we should we move it because we don't
+          explain why these matter here?)</mark></p>
 
         <h3>Does your employer provide matching contributions?</h3>
 
-        <p>If your <a class="soon" title="Page coming soon">employer matches</a> part of your
-          retirement contributions, that&rsquo;s money added to your savings on
-          top of your own, which can lower how much you need to save yourself each
-          year.</p>
+        <p>In many jobs, your employer will add money to your retirement account,
+          but often only if you put in some of your own. This is called an
+          <a class="soon" title="Page coming soon">employer match</a>. For example, say your
+          employer matches 100% of what you put in, up to 5% of your pay. If you put
+          in 5% of your pay, your employer adds another 5%.</p>
+
+        <p><mark class="todo">This does not change the total amount you need to save
+          each year for retirement, but if your employer contributes, it means that
+          you have to personally save less because your employer is helping you
+          reach your number.</mark></p>
 
         <h3>Example</h3>
 
         <p>Say your retirement number is $1,343,787, from Step One. You plan to
           retire in 35 years.</p>
 
-        <p>You expect a return of 8% before inflation while you work, subtracting 2%
-          inflation, you plan on 6% growth. To reach your retirement number you need
+        <p>You expect a return of 9% before inflation while you work, subtracting 2%
+          inflation, you plan on 7% growth. To reach your retirement number you need
           to save:</p>
 
         <div class="keynum">
           <span class="ctitle">Annual savings:</span>
-          <span class="kfig">$12,059 a year</span>
+          <span class="kfig">$9,721 a year</span>
+          <span class="klabel">This is in today&rsquo;s dollars. In practice, you
+            would save $9,721 in your first year, then raise the amount by 2% each
+            year to keep up with inflation.</span>
         </div>
 
         <details class="math">
@@ -295,15 +303,15 @@
             <ul>
               <li><var>FV</var> = 1,343,787 (the retirement number from Step One)</li>
               <li><var>C</var> = the yearly savings (what we&rsquo;re solving for)</li>
-              <li><var>r</var> = 0.06 (a 6% return after inflation)</li>
+              <li><var>r</var> = 0.07 (a 7% return after inflation)</li>
               <li><var>T</var> = 35 (years until retirement)</li>
             </ul>
             <p class="mstep">With the numbers filled in:</p>
-            <div class="formula">1,343,787<span class="op">=</span><span class="frac"><span class="num"><var>C</var></span><span class="den">0.06</span></span><span class="par">(</span><span class="grp">(1.06)<sup>35</sup></span><span class="op">&minus;</span>1<span class="par">)</span></div>
+            <div class="formula">1,343,787<span class="op">=</span><span class="frac"><span class="num"><var>C</var></span><span class="den">0.07</span></span><span class="par">(</span><span class="grp">(1.07)<sup>35</sup></span><span class="op">&minus;</span>1<span class="par">)</span></div>
             <ol class="msteps">
-              <li>(1.06)<sup>35</sup> = 7.686087, and 7.686087 &minus; 1 = 6.686087</li>
-              <li>1,343,787 &times; 0.06 = 80,627.22</li>
-              <li>80,627.22 &divide; 6.686087 = <strong>$12,059</strong></li>
+              <li>(1.07)<sup>35</sup> = 10.676581, and 10.676581 &minus; 1 = 9.676581</li>
+              <li>1,343,787 &times; 0.07 = 94,065.09</li>
+              <li>94,065.09 &divide; 9.676581 = <strong>$9,721</strong></li>
             </ol>
           </div>
         </details>
@@ -382,10 +390,10 @@
           </div>
           <div class="cfield">
             <label for="f-rbef">Expected annual return before retirement</label>
-            <div class="cin"><input id="f-rbef" type="text" inputmode="decimal" value="6" />
+            <div class="cin"><input id="f-rbef" type="text" inputmode="decimal" value="7" />
               <span class="csuf">%</span></div>
             <p class="chint">Subtract expected inflation here too. If you expect
-              8% growth and 2% inflation, enter 6%.</p>
+              9% growth and 2% inflation, enter 7%.</p>
           </div>
           <div class="cout" aria-live="polite">
             <span class="colab">Required savings each year</span>
@@ -432,9 +440,9 @@
 
   var F = ['f-spend','f-len','f-rdur','f-cur','f-yrs','f-rbef'];
   /* v5: defaults are the article's worked examples: Step One ($60,000, 30
-     years, 2%) and Step Two (35 years, 6%) */
+     years, 2%) and Step Two (35 years, 7%) */
   var DEF = {'f-spend':'60,000','f-len':'30','f-rdur':'2','f-cur':'0',
-             'f-yrs':'35','f-rbef':'6'};
+             'f-yrs':'35','f-rbef':'7'};
 
   function num(id) {
     var n = parseFloat((($(id).value) || '').replace(/[^0-9.\-]/g, ''));
